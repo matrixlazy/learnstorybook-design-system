@@ -18,7 +18,6 @@ const Loading = styled.span`
   opacity: 0;
 `;
 
-
 const APPEARANCES = {
   PRIMARY: 'primary',
   PRIMARY_OUTLINE: 'primaryOutline',
