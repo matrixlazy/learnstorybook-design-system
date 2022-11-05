@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Avatar } from "./Avatar";
+import {Avatar} from "./Avatar";
 
 export default {
   title: "Design System/Avatar",
@@ -13,6 +13,13 @@ export default {
       options: ['tiny', 'small', 'medium', 'large'],
     },
   },
+  /*
+  * More on Storybook parameters at:
+  * https://storybook.js.org/docs/react/writing-stories/parameters#component-parameters
+  */
+  parameters: {
+    componentSubtitle: 'Displays an image that represents a user or organization',
+  },
 };
 
 export const Standard = (args) => <Avatar {...args} />;
@@ -24,10 +31,10 @@ Standard.args = {
 
 export const Sizes = (args) => (
   <div>
-    <Avatar {...args} size="large" />
-    <Avatar {...args} size="medium" />
-    <Avatar {...args} size="small" />
-    <Avatar {...args} size="tiny" />
+    <Avatar {...args} size="large"/>
+    <Avatar {...args} size="medium"/>
+    <Avatar {...args} size="small"/>
+    <Avatar {...args} size="tiny"/>
   </div>
 );
 Sizes.args = {
@@ -37,29 +44,29 @@ Sizes.args = {
 
 export const Initials = (args) => (
   <div>
-    <Avatar username="Tom Coleman" />
-    <Avatar username="Dominic Nguyen" />
-    <Avatar username="Kyle Suss" />
-    <Avatar username="Michael Shilman" />
+    <Avatar username="Tom Coleman"/>
+    <Avatar username="Dominic Nguyen"/>
+    <Avatar username="Kyle Suss"/>
+    <Avatar username="Michael Shilman"/>
   </div>
 );
 
 export const Loading = (args) => (
-    <div>
-      <Avatar {...args} size="large" />
-      <Avatar {...args} size="medium" />
-      <Avatar {...args} size="small" />
-      <Avatar {...args} size="tiny" />
-    </div>
-  );
-  Loading.args = {
-    loading: true,
-  };
+  <div>
+    <Avatar {...args} size="large"/>
+    <Avatar {...args} size="medium"/>
+    <Avatar {...args} size="small"/>
+    <Avatar {...args} size="tiny"/>
+  </div>
+);
+Loading.args = {
+  loading: true,
+};
 
 export const Large = (args) => (
   <div>
-    <Avatar loading size="large" />
-    <Avatar size="large" username="Tom Coleman" />
+    <Avatar loading size="large"/>
+    <Avatar size="large" username="Tom Coleman"/>
     <Avatar
       size="large"
       username="Tom Coleman"
