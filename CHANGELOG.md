@@ -1,3 +1,16 @@
+# v0.2.0 (Sun Nov 06 2022)
+
+#### 🚀 Enhancement
+
+- Create avatar list component [#7](https://github.com/matrixlazy/learnstorybook-design-system/pull/7) ([@alvisnaver](https://github.com/alvisnaver) [@matrixlazy](https://github.com/matrixlazy))
+
+#### Authors: 2
+
+- [@alvisnaver](https://github.com/alvisnaver)
+- [@matrixlazy](https://github.com/matrixlazy)
+
+---
+
 # v0.1.3 (Sun Nov 06 2022)
 
 #### 🐛 Bug Fix
