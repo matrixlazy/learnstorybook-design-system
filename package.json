@@ -1,6 +1,6 @@
 {
   "name": "@naveralvis/learnstorybook-design-system-template",
-  "version": "0.1.2--canary.b9e912b.0",
+  "version": "0.1.2--canary.be7f196.0",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
