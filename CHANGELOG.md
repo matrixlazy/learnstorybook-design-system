@@ -1,3 +1,16 @@
+# v0.1.3 (Sun Nov 06 2022)
+
+#### 🐛 Bug Fix
+
+- update [#6](https://github.com/matrixlazy/learnstorybook-design-system/pull/6) ([@alvisnaver](https://github.com/alvisnaver) [@matrixlazy](https://github.com/matrixlazy))
+
+#### Authors: 2
+
+- [@alvisnaver](https://github.com/alvisnaver)
+- [@matrixlazy](https://github.com/matrixlazy)
+
+---
+
 # v0.1.2 (Sun Nov 06 2022)
 
 #### 🐛 Bug Fix
