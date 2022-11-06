@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-template",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@naveralvis/learnstorybook-design-system-template",
+  "version": "0.1.2--canary.963f2f3.0",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -15,11 +15,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build1": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "release": "auto shipit --base-branch=main",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
+    "build-storybook-docs": "build-storybook  --docs",
+    "test-storybook": "test-storybook",
     "chromatic": "npx chromatic --project-token=dce5098ea45e"
   },
   "eslintConfig": {
@@ -38,7 +42,16 @@
       }
     ]
   },
-  "babel": {},
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -52,19 +65,30 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
     "@babel/preset-typescript": "^7.18.6",
+    "@storybook/addon-a11y": "^6.5.13",
     "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-docs": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
     "@storybook/addon-links": "^6.5.13",
     "@storybook/builder-webpack4": "^6.5.13",
+    "@storybook/jest": "^0.0.10",
     "@storybook/manager-webpack4": "^6.5.13",
     "@storybook/node-logger": "^6.5.13",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.5.13",
+    "@storybook/test-runner": "^0.9.0",
     "@storybook/testing-library": "^0.0.13",
-    "chromatic": "^6.11.4"
+    "auto": "^10.37.6",
+    "chromatic": "^6.11.4",
+    "cross-env": "^7.0.3",
+    "jest": "27"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "learnstorybook-design-system-template@0.1.0"
+  "main": "dist/index.js",
+  "repository": "git@github.com:matrixlazy/learnstorybook-design-system.git",
+  "author": "alvis <nhan.huynhvan@navercorp.com>",
+  "license": "MIT"
 }
