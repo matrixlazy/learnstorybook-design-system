@@ -86,7 +86,6 @@
     "jest": "27"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "learnstorybook-design-system-template@0.1.0",
   "main": "dist/index.js",
   "repository": "git@github.com:matrixlazy/learnstorybook-design-system.git",
   "author": "alvis <nhan.huynhvan@navercorp.com>",
